@@ -10,22 +10,18 @@ $ docker compose build
 $ docker compose run workspace bash
 ```
 
-## 3. Test the flex and bison
+## 3. Build Project
 
 > - Run below code inside the container!
-> 
-> - Press Ctrl + D to input EOF to program
 
 ```
-$ flex 1.l
-$ cc lex.yy.c -lfl
-$ ./a.out
-The boy stood on the burning deck
-shelling peanuts by the peck
-^D
+$ make
 ```
 
-**Output**
+## 4. Clean Project
+
+> - Run below code inside the container!
+
 ```
-2 12 63
+$ make clean
 ```
